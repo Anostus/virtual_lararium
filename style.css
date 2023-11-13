@@ -1,0 +1,35 @@
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+#lararium img {
+    max-width: 100%;
+    height: auto;
+    display: none; /* Initially hide elements */
+}
+
+.candle {
+    position: absolute;
+    top: 50%; /* Adjust as per design */
+    width: 10%; /* Adjust size accordingly */
+}
+
+#lararium {
+    position: relative;
+}
+
+#music-player {
+    display: none; /* Hide the YouTube iframe */
+}
+
+.buttons {
+    margin-top: 20px;
+}
