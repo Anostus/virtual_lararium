@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Lararium</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="lararium">
+            <img src="path_to_lararium_image.jpg" alt="Lararium">
+            <img id="candle-left" class="candle" src="path_to_candle_image.jpg" alt="Left Candle">
+            <img id="candle-right" class="candle" src="path_to_candle_image.jpg" alt="Right Candle">
+            <img id="incense" src="path_to_incense_image.jpg" alt="Incense">
+            <img id="offering-bowl" src="path_to_offering_bowl.jpg" alt="Offering Bowl">
+        </div>
+        <div class="buttons">
+            <button onclick="toggleVisibility('candle-left'); toggleVisibility('candle-right')">Candles</button>
+            <button onclick="toggleVisibility('incense')">Incense</button>
+            <button onclick="toggleVisibility('offering-bowl')">Food Offering</button>
+            <button onclick="toggleVisibility('offering-bowl')">Wine Offering</button>
+            <button onclick="togglePlay()">Play Music</button>
+        </div>
+        <iframe id="music-player" width="1" height="1" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
